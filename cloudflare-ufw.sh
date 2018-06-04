@@ -13,7 +13,7 @@ for cfip in `cat ips-v6`; do ufw allow from $cfip; done
 ufw reload > /dev/null
 
 # OTHER EXAMPLE RULES
-# Examples to retrict to port 80
+# Examples to restrict to port 80
 #for cfip in `cat ips-v4`; do ufw allow from $cfip to any port 80 proto tcp; done
 #for cfip in `cat ips-v6`; do ufw allow from $cfip to any port 80 proto tcp; done
 
